@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Week 3 Shopping List</title>
+  <link rel="stylesheet" href="Week 3 Shopping List.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 id="myHeader">Shopping List!</h1>
+<div>
+  <input id="addButton" type="button" value="Add" onclick="addTask()"/>
+</div>
+<div>
+  <input id="input" type="text" placeholder="enter item..." />
+</div>
+
+<hr>
+    
+<ul id="tasks">
+  <li>
+    <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+    <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+    <input type="button" class="important" value="!" onclick="important(this.parentNode)" style="width:30px"/>
+    Bread
+  </li>
+  
+    </ul>
+<hr>
+ <div id=divabout>
+   <input type="button" value="About" onclick="doAbout()"/>
+</div>
+<!-- partial -->
+  <script  src="Week 3 Shopping List.js"></script>
+
+</body>
+</html>
